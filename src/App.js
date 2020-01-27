@@ -26,8 +26,8 @@ export default class Tictactoe extends React.Component {
       btn7d: false,
       btn8d: false,
       btn9d: false,
-      redwon:"",
-      greenwon:""
+      redwon:0,
+      greenwon:0
 
 
 
@@ -57,108 +57,121 @@ export default class Tictactoe extends React.Component {
     })
   }
   checkResult() {
-    if (this.state.btn1 == this.state.btn2 && this.state.btn1 == this.state.btn3){
-      if (this.state.btn1 == "red") {
+    if (this.state.btn1 === this.state.btn2 && this.state.btn1 === this.state.btn3){
+      if (this.state.btn1 === "red") {
         this.setState({
-          message: "red has won",
+          message: "congragulation red has won",
           redwon:this.state.redwon+1
         })
-      } else if (this.state.btn1 == "green") {
+      } else if (this.state.btn1 === "green") {
         this.setState({
-          message: "green has won",
+          message: "congragulation green has won",
           greenwon:this.state.greenwon+1
         })
       }
     }
-    if (this.state.btn4 == this.state.btn5 && this.state.btn4 == this.state.btn6) {
-      if (this.state.btn4 == "red") {
+    if (this.state.btn4 === this.state.btn5 && this.state.btn4 === this.state.btn6) {
+      if (this.state.btn4 === "red") {
         this.setState({
-          message: "red has won",
+          message: "congragulation red has won",
           redwon:this.state.redwon+1
         })
-      } else if (this.state.btn4 == "green") {
+      } else if (this.state.btn4 === "green") {
         this.setState({
-          message: "green has won",
+          message: "congragulation green has won",
           greenwon:this.state.greenwon+1
         })
       }
     }
-      if (this.state.btn7 == this.state.btn8 && this.state.btn7 == this.state.btn9) {
-        if (this.state.btn7 == "red") {
+      if (this.state.btn7 === this.state.btn8 && this.state.btn7 === this.state.btn9) {
+        if (this.state.btn7 === "red") {
           this.setState({
-            message: "red has won",
+            message: "congragulation red has won",
             redwon:this.state.redwon+1
           })
-        } else if (this.state.btn7 == "green") {
+        } else if (this.state.btn7 === "green") {
           this.setState({
-            message: "green has won",
+            message: "congragulation green has won",
             greenwon:this.state.greenwon+1
           })
         }
     }
-    if (this.state.btn1 == this.state.btn5 && this.state.btn1 == this.state.btn9) {
-      if (this.state.btn1 == "red") {
+    if (this.state.btn1 === this.state.btn5 && this.state.btn1 === this.state.btn9) {
+      if (this.state.btn1 === "red") {
         this.setState({
-          message: "red has won",
+          message: "congragulation red has won",
           redwon:this.state.redwon+1
         })
-      } else if (this.state.btn1 == "green") {
+      } else if (this.state.btn1 === "green") {
         this.setState({
-          message: "green has won",
+          message: "congragulation green has won",
           greenwon:this.state.greenwon+1
         })
       }
   }
-  if (this.state.btn3 == this.state.btn5 && this.state.btn3 == this.state.btn7) {
-    if (this.state.btn3 == "red") {
+  if (this.state.btn3 === this.state.btn5 && this.state.btn3 === this.state.btn7) {
+    if (this.state.btn3 === "red") {
       this.setState({
-        message: "red has won",
+        message: "congragulation red has won",
         redwon:this.state.redwon+1
       })
-    } else if (this.state.btn3 == "green") {
+    } else if (this.state.btn3 === "green") {
       this.setState({
-        message: "green has won",
+        message: "congragulation green has won",
         greenwon:this.state.greenwon+1
       })
     }
 }
-if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
-  if (this.state.btn1 == "red") {
+if (this.state.btn1 === this.state.btn4 && this.state.btn1 === this.state.btn7) {
+  if (this.state.btn1 === "congragulation red") {
     this.setState({
-      message: "red has won",
+      message: "congragulation red has won",
       redwon:this.state.redwon+1
     })
-  } else if (this.state.btn1 == "green") {
+  } else if (this.state.btn1 === "green") {
     this.setState({
-      message: "green has won",
+      message: "congragulation green has won",
       greenwon:this.state.greenwon+1
     })
   }
 }
-  if (this.state.btn2 == this.state.btn5 && this.state.btn2 == this.state.btn8) {
-    if (this.state.btn2 == "red") {
+  if (this.state.btn2 === this.state.btn5 && this.state.btn2 === this.state.btn8) {
+    if (this.state.btn2 === "red") {
       this.setState({
-        message: "red has won",
+        message: "congragulation red has won",
         redwon:this.state.redwon+1
       })
-    } else if (this.state.btn2 == "green") {
+    } else if (this.state.btn2 === "green") {
       this.setState({
-        message: "green has won",
+        message: "congragulation green has won",
         greenwon:this.state.greenwon+1
       })
     }
   }
-  if (this.state.btn3 == this.state.btn6 && this.state.btn3 == this.state.btn9) {
-    if (this.state.btn3 == "red") {
+  if (this.state.btn3 === this.state.btn6 && this.state.btn3 === this.state.btn9) {
+    if (this.state.btn3 === "red") {
       this.setState({
-        message: "red has won",
+        message: "congragulation red has won",
         redwon:this.state.redwon+1
       })
-    } else if (this.state.btn3 == "green") {
+    } else if (this.state.btn3 === "green") {
       this.setState({
-        message: "green has won",
+        message: "congragulation green has won",
         greenwon:this.state.greenwon+1
       })
+    }
+    if (this.state.btn1 === this.state.btn4 && this.state.btn1 === this.state.btn7) {
+      if (this.state.btn1 === "red") {
+        this.setState({
+          message: "congragulation red has won",
+          redwon:this.state.redwon+1
+        })
+      } else if (this.state.btn1 === "green") {
+        this.setState({
+          message: "congragulation green has won",
+          greenwon:this.state.greenwon+1
+        })
+      }
     }
 }
 }
@@ -168,8 +181,8 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
   
 
     handleclick(location) {
-      if (this.state.i % 2 == 0) {
-        if (location == 1) {
+      if (this.state.i % 2 === 0) {
+        if (location === 1) {
           this.setState({
             btn1: "red",
             btn1d: true,
@@ -179,7 +192,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
           })
 
         }
-        else if (location == 2) {
+        else if (location === 2) {
           this.setState(
             {
               btn2: "red",
@@ -191,7 +204,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
             }
           )
         }
-        else if (location == 3) {
+        else if (location === 3) {
 
           this.setState(
             {
@@ -203,7 +216,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 4) {
+        } else if (location === 4) {
           this.setState(
             {
               btn4: "red",
@@ -214,7 +227,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 5) {
+        } else if (location === 5) {
           this.setState(
             {
               btn5: "red",
@@ -225,7 +238,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 6) {
+        } else if (location === 6) {
           this.setState(
             {
               btn6: "red",
@@ -236,7 +249,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 7) {
+        } else if (location === 7) {
           this.setState(
             {
               btn7: "red",
@@ -247,7 +260,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 8) {
+        } else if (location === 8) {
           this.setState(
             {
               btn8: "red",
@@ -257,7 +270,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
             }, function () {
               this.checkResult()
             })
-        } else if (location == 9) {
+        } else if (location === 9) {
           this.setState(
             {
               btn9: "red",
@@ -271,7 +284,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
         }
 
       } else {
-        if (location == 1) {
+        if (location === 1) {
           this.setState({
             btn1: "green",
             btn1d: true,
@@ -280,7 +293,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
             this.checkResult()
           })
         }
-        else if (location == 2) {
+        else if (location === 2) {
           this.setState(
             {
               btn2: "green",
@@ -292,7 +305,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
             }
           )
         }
-        else if (location == 3) {
+        else if (location === 3) {
 
           this.setState(
             {
@@ -304,7 +317,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 4) {
+        } else if (location === 4) {
           this.setState(
             {
               btn4: "green",
@@ -315,7 +328,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 5) {
+        } else if (location === 5) {
           this.setState(
             {
               btn5: "green",
@@ -325,7 +338,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 6) {
+        } else if (location === 6) {
           this.setState(
             {
               btn6: "green",
@@ -336,7 +349,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 7) {
+        } else if (location === 7) {
           this.setState(
             {
               btn7: "green",
@@ -347,7 +360,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
               this.checkResult()
             }
           )
-        } else if (location == 8) {
+        } else if (location === 8) {
           this.setState(
             {
               btn8: "green",
@@ -357,7 +370,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
             }, function () {
               this.checkResult()
             })
-        } else if (location == 9) {
+        } else if (location === 9) {
           this.setState(
             {
               btn9: "green",
@@ -377,7 +390,7 @@ if (this.state.btn1 == this.state.btn4 && this.state.btn1 == this.state.btn7) {
     render() {
       return ( 
         <div style={{ textAlign: "center" }}>
-          TIK TAK TOE
+          WELL COME THE TIK TAK TOE 
           <br/>
           <button className="btn" style={{ backgroundColor: this.state.btn1 }}
             onClick={this.handleclick.bind(this, 1)}
